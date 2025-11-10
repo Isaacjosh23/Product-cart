@@ -1,31 +1,12 @@
+import { ProductContainer } from "./components/ProductContainer";
+import { CartProvider } from "./useCart";
+
 const App = () => {
-  return <ProductContainer />;
-};
-
-const ProductContainer = () => {
   return (
-    <div>
-      <ProductDisplay />
-
-      <ProductCheckout />
-    </div>
+    <CartProvider>
+      <ProductContainer />
+    </CartProvider>
   );
-};
-
-const ProductDisplay = () => {
-  return (
-    <div>
-      <ProductTitle />
-    </div>
-  );
-};
-
-const ProductCheckout = () => {
-  return;
-};
-
-const ProductTitle = () => {
-  return;
 };
 
 export default App;
