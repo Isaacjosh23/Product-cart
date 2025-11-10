@@ -4,8 +4,6 @@ import { Button } from "./reusables/Button";
 export function ProductOrderConfirm() {
   const { cart, totalAmount, handleOverlayClick, handleNewOrder } = useCart();
 
-  console.log(cart);
-
   return (
     <>
       <div className="flex flex-col gap-12 fixed z-[50] w-[30rem] md:w-[40rem] max-h-[90vh] overflow-y-auto top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  bg-white p-8 rounded-2xl">

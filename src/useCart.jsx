@@ -80,8 +80,6 @@ export function CartProvider({ children }) {
   }, [isConfirm]);
 
   function handleIsConfirm() {
-    console.log("confirmed");
-
     setIsConfirm((confirm) => !confirm);
   }
 

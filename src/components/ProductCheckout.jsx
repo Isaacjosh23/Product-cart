@@ -28,7 +28,7 @@ function FilledCart({ cart, onDeleteCart, totalAmount, onConfirm }) {
   return (
     <>
       {cart.map((cartItem) => (
-        <>
+        <div key={cartItem.product.name}>
           <div className="flex items-center justify-between">
             <div>
               <p className="font-semibold text-[1.3rem] mb-2">
@@ -59,7 +59,7 @@ function FilledCart({ cart, onDeleteCart, totalAmount, onConfirm }) {
             </button>
           </div>
           <hr />
-        </>
+        </div>
       ))}
 
       <div className="flex items-center justify-between">
